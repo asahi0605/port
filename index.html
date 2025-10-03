@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <!-- og系はLINEかでURL送ると出てくるやつ ogpと言う -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Webデザイナーを目指す佐々木愛のポートフォリオ">
+  <meta property="og:title" content="佐々木愛のポートフォリオ">
   <meta property="og:url" content="URL">
   <meta property="og:description" content="佐々木愛のポートフォリオサイトです。">
   <meta property="og:image" content="img/ogp.png">
   <meta name="robots" content="noindex,nofollow">
   <meta name="description" content="佐々木愛のポートフォリオサイトです">
   <title>佐々木 愛 ポートフォリオ</title>
-  <!-- ↑名前をちゃんと変更してこのコメントアウトを削除すること -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -21,7 +20,12 @@
   <link href="css/ress.css" media="all" rel="stylesheet">
   <link href="css/style.css" media="all" rel="stylesheet">
   <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.min.css">
   <link rel="canonical" href="URL">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +35,7 @@
     <header class="header ">
       <div class="header-inner">
         <h1 class="header-logo">
-          <a href=".">佐々木 愛 ポートフォリオ</a>
+          <a href=".">AI's PortFolio</a>
         </h1>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -49,7 +53,7 @@
       <div class="works section" id="works">
         <section class="inner">
           <h2 class="title">作品一覧</h2>
-          <h3>◆ホームページ</h3>
+          <h3>▼ホームページ</h3>
           <div class="works-list">
             <a class="works-item" href="works-hp1-.html">
               <p class="works-img"><img src="img/works-sample-thumb.jpg" width="400" height="300" alt=""></p>
@@ -62,10 +66,11 @@
               <p class="works-img"><img src="img/hp2/index_top_w400h300.jpg" width="400" height="300" alt=""></p>
               <p class="works-name">照明販売ECサイト「TOMORI」</p>
               <p class="works-info">自主制作/製作期間　2025/3/1~3/20
-              <br>情報収集/企画・コンセプト立案/ワイヤーフレーム・デザインカンプ/素材収集/画像加工/バナー作成/ロゴ作成/コーディング</p>
+                <br>情報収集/企画・コンセプト立案/ワイヤーフレーム・デザインカンプ/素材収集/画像加工/バナー作成/ロゴ作成/コーディング
+              </p>
             </a>
           </div>
-          <h3>◆ランディングページ</h3>
+          <h3>▼ランディングページ</h3>
           <div class="works-list">
             <a class="works-item" href="works-lp1.html">
               <p class="works-img"><img src="img/lp1/AT_top.jpg" width="400" height="300" alt=""></p>
@@ -75,7 +80,7 @@
               </p>
             </a>
           </div>
-          <h3>◆バナー</h3>
+          <h3>▼バナー</h3>
           <div class="works-list">
             <a class="works-item" href="works-banner1.html">
               <p class="works-img"><img src="img/mr_3_h300.jpg" width="326" height="300" alt=""></p>
@@ -91,8 +96,16 @@
                 <br>素材収集/デザイン/画像加工
               </p>
             </a>
+            <figure class="works-item">
+              <a class="works-img_b" href="img/banner_tokiwadai.png" data-lightbox="roadtrip"
+                data-title="ときわ台ロータリー　マルシェイベントのチラシ">
+                <!-- <a href="images/photo_1.jpg" data-lightbox="roadtrip"> -->
+                <img src="img/banner_tokiwadai.png" alt="img1" width="326" height="300"></a>
+              <p class="works-name">マルシェイベントのチラシ制作</p>
+              <p class="works-info">依頼/製作期間　2025/02/01~2025/02/28<br>素材収集/デザイン/画像加工</p>
+            </figure>
           </div>
-          <h3>◆ロゴ</h3>
+          <h3>▼ロゴ</h3>
           <div class="works-list">
             <a class="works-item" href="works-rogo1.html">
               <p class="works-img"><img src="img/logo_group.png" width="326" height="300" alt=""></p>
@@ -101,7 +114,7 @@
                 情報収集/コンセプト立案/デザイン/ロゴ制作/プレゼン</p>
             </a>
           </div>
-          <h3>◆グループワーク</h3>
+          <h3>▼グループワーク</h3>
           <div class="works-list">
             <a class="works-item" href="works-group_.html">
               <p class="works-img"><img src="img/customer/customer_w300.jpg" width="300" height="300" alt=""></p>
@@ -221,13 +234,17 @@
       <!-- split -->
       <div class="split">
         <div class="split-body">
+          <h2 class="title">わたしについて</h2>
           <p class="split-title">佐々木　愛</p>
           <p class="split-text">
-            コーディングも画像加工もやりごたえがあり楽しく感じます。現在PHP、jQuery、Javascriptを勉強中です。
-            <br>アニメーションももっと制作してみたいです。
-            <br>デザインやアートに強い関心があります。好きなものは美術館や博物館、空・植物・動物、ゲーム・漫画・小説などです。集中していると時間を忘れて没頭して作業しています。
-            <br>身近にデザインやアートを仕事で扱う人が数名居り、年々興味が強くなってきました。前職の出版社でさらに興味を持ちました。今後はより制作に関わっていけたら幸いです。
-            <br>東京都板橋区在住。アジャストアカデミー在校中です。
+            コーディング・WEB素材制作、WEBデザイン。現在jQuery、Javascriptを勉強中です。
+          </p>
+          <p>
+            デザインやアートに強い関心があります。
+            <br>好きなものは美術館や博物館、空・植物・動物、ゲーム・漫画・小説、街歩き・旅行。集中していると時間を忘れて没頭して作業しています。
+          </p>
+          <p>身近にデザインやアートを仕事で扱う人が数名居り、私にも何かできたらと考えています。
+            <br>東京都板橋区在住。出版社在職中。
           </p>
         </div>
         <div class="split-img"></div>
@@ -248,7 +265,9 @@
   </div>
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/script.js"></script>
-</body>
 
+  <!-- lightbox2 -->
+  <script src="lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
+</body>
 
 </html>
